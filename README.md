@@ -26,4 +26,4 @@ Your final solution should look similar to this:
 
 ## Links
 
-Live application: 
+Live application: https://zaitken1.github.io/travel-california/
