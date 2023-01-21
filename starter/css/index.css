@@ -1,0 +1,233 @@
+/* Global styles ============= */
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: 'Muli', 'Helvetica', 'Arial', 'sans-serif';
+}
+
+a {
+  transition: all .35s;
+  color: white;
+  text-decoration: none !important;
+}
+
+a:hover, a:focus {
+  color: #fcbd20;
+}
+
+img {
+  max-width: 100%;
+}
+
+hr {
+  max-width: 100px;
+  margin: 25px auto 0;
+  border-width: 1px;
+  border-color: rgba(34, 34, 34, 0.1);
+}
+
+hr.light {
+  border-color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
+  font-weight: 200;
+  letter-spacing: 1px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+section {
+  padding: 100px 0;
+}
+
+section h2 {
+  font-size: 50px;
+}
+
+/* GLOBAL CLASSES */
+.card {
+  height: 100%;
+}
+
+/* CUSTOM STYLES */
+.hero {
+  background-image: url("../images/bg-img.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 35px;
+}
+.hero .hero-nav {
+  margin-bottom: 50px;
+}
+
+.hero .nav-logo {
+  font-family: 'Muli' sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 49px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #FFE000;
+  text-shadow: 
+  0px 0px 5px #000, 
+  0px 0px 5px #000,
+  0px 0px 7px #000;
+}
+
+.masthead .masthead-text {
+  padding-right: 9rem;
+  color: white;
+}
+
+.masthead .masthead-text--cta {
+  font-family: 'Catamaran' sans-serif;
+  font-size: 3.6rem;
+} 
+
+.masthead .masthead-button {
+  border: 1px solid white;
+  border-radius: 30px;
+  padding: 10px 15px;
+  width: 350px;
+  background-color: transparent;
+  color: white;
+}
+
+.download {
+  background-color: #FDC949;
+  padding: 10% 0;
+}
+
+.testimonial-item img {
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.signup-section {
+  background-image: url("../images/SF.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding: 9% 0;
+}
+
+.signup-section .signup-text {
+  color: white;
+}
+
+.signup-section .signup-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.signup-section input {
+  color: white;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  padding-right: 10px;
+  width: 350px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  height: 40px;
+}
+
+.signup-section button {
+  border: none;
+  border-radius: 20px;
+  height: 40px;
+}
+
+.contact-section {
+  background: #333;
+  padding: 8% 0;
+}
+
+.contact-section .card {
+  background: none;
+  color: white;
+  border: 2px solid #eee;
+}
+
+.contact-section .card .fas {
+  font-size: 1.7rem;
+  margin-bottom: 10px;
+}
+
+.social {
+  margin-top: 35px;
+}
+
+.social .fab {
+  font-size: 2rem;
+  margin: 0 7px;
+}
+
+.footer {
+  padding: 25px 0;
+  background-color: #333;
+  color: white;
+}
+
+/* MOBILE STYLES */
+@media (max-width: 992px) {
+  .hero-nav > div {
+    display: flex;
+    justify-content: center !important;
+  }
+
+  .masthead-text {
+    order: 2;
+    padding: 10px !important;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .masthead-text .masthead-text--cta {
+    font-size: 1.7rem;
+    text-align: center;
+  }
+
+  .masthead-image {
+    order: 1;
+  }
+
+  .masthead-image .device-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .masthead-image img {
+    max-width: 30%;
+  }
+
+  .masthead-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
